@@ -16,6 +16,7 @@ const archivo = Archivo_Black({
   weight: "400",
   variable: "--font-archivo",
   display: "swap",
+  adjustFontFallback: false,
 });
 
 import { RiNpmjsFill, RiGithubFill } from "react-icons/ri";

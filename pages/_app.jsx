@@ -11,6 +11,7 @@ const notoSans = Noto_Sans({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin-ext"],
   display: "swap",
+  adjustFontFallback: false,
 });
 
 const MyApp = ({ Component, pageProps }) => {
