@@ -12,7 +12,6 @@ export default async function handler(req, res) {
     const content = `
 Name: ${name}
 Email: ${email}
-___________________________
 
 ${message}`;
 
