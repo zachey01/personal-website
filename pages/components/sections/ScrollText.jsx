@@ -30,6 +30,9 @@ const ScrollText = ({ screen, i, setCurrentImage, currentImage }) => {
       }
     };
   }, []);
+
+  if (!screen || !screen.id) return null;
+
   return (
     <div
       className={`overflow-hidden xl:p-20 lg:p-10 border-0 border-red-400 ${
@@ -50,16 +53,6 @@ const ScrollText = ({ screen, i, setCurrentImage, currentImage }) => {
               <div className="text-pink">{screen.heading1}</div>
               <div className="text-pink">{screen.heading2}</div>
             </div>
-            {/* <motion.div 
-              animate={{
-                WebkitMaskPosition: hovering ? `${xPos-1.5*size}px ${yPos-size}px` : `${xPos-6*size}px ${yPos-6*size}px` ,
-                WebkitMaskSize:`${size}px`
-              }}
-              transition={{ type:'tween',ease:'backOut'}}
-              className='p-6 pb-8 text-white border-0 border-white lg:-mt-[11em] xl:-mt-60 sm3:-mt-32 mask sm1:hidden lg:block sm2:-mt-24 sm1:-mt-20'
-            >
-              <p className="xl:text-8xl lg:text-7xl md:text-6xl sm3:text-5xl" ref={textRef}>{ screen.maskText }</p>
-            </motion.div> */}
           </div>
           <div className="w-4/5 m-auto font-light tracking-normal text-left text-white border-0 border-red-500 lg:p-8 xl:text-lg lg:text-lg md:text-lg sm1:mt-0 md:mt-8 lg:mt-0 sm1:text-xs">
             {screen.description}
