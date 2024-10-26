@@ -14,6 +14,7 @@ const archivo = Archivo_Black({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-archivo",
+  display: "swap",
 });
 
 const Skills = [
