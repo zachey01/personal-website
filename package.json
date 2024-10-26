@@ -43,7 +43,7 @@
     "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.20",
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.5",
     "gsap-trial": "^3.12.4",
