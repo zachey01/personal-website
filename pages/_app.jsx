@@ -46,6 +46,7 @@ const MyApp = ({ Component, pageProps }) => {
           type="font/woff2"
           crossorigin
         />
+        <Analytics />
       </Head>
 
       <>
